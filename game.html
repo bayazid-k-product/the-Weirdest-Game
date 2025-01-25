@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أغرب لعبة في التاريخ</title> <!-- Title of the game -->
+    <link rel="stylesheet" href="gamestyle.css"> <!-- Link to the CSS file for styling -->
+</head>
+<body dir="rtl"> <!-- Set the text direction to right-to-left (Arabic) -->
+    <div class="container">
+        <h1>أغرب لعبة في التاريخ</h1> <!-- Game title -->
+        <p id="timer">الوقت اللي باقي: 60 ثانية</p> <!-- Timer countdown -->
+        <p id="attempts">المحاولات اللي باقيه: 10</p> <!-- Number of remaining attempts -->
+        <p id="message"></p> <!-- Message to display after each guess -->
+
+        <div class="input-container">
+            <input type="number" id="guess" placeholder="اكتب رقمك هنا" /> <!-- Input field for guessing the number -->
+            <button onclick="checkGuess()" id="guessBtn">جرب حظك</button> <!-- Button to check the guess -->
+        </div>
+
+        <button id="hintBtn" onclick="giveHint()">عايز مساعدة</button> <!-- Button for getting a hint -->
+        <button id="newGameBtn" onclick="newGame()">ابدأ من الأول</button> <!-- Button to start a new game -->
+
+        <p id="threatMessage"></p> <!-- Display a random threat message -->
+
+        <!-- Challenge section, hidden by default -->
+        <div id="challenge" style="display: none;">
+            <p id="challengeText"></p> <!-- Display the challenge text -->
+            <input type="text" id="challengeInput" /> <!-- Input field for challenge completion -->
+            <button onclick="completeChallenge()">بعتها</button> <!-- Button to submit the challenge answer -->
+            <button onclick="anotherChallenge()">تحدي تاني</button> <!-- Button to get a new challenge -->
+        </div>
+
+        <!-- Trend info, hidden by default -->
+        <div id="trendInfo" style="display: none;">
+            <h2>تريند النهارده:</h2> <!-- Trend heading -->
+            <p id="trendText"></p> <!-- Display trend message -->
+        </div>
+
+        <!-- Red screen, hidden by default -->
+        <div id="redScreen"></div>
+        <!-- Dog emoji, hidden by default -->
+        <div id="dogEmoji" style="display: none;">🐶</div>
+        <!-- Thank you message, hidden by default -->
+        <p id="thankYou" style="display: none;">شكراً إنك لعبت معانا!</p>
+
+        <!-- Audio files for hint, dog sound, and alarm sound -->
+        <audio id="hintSound" src="hint-sound.mp3"></audio>
+        <audio id="dogSound" src="dog-barking.mp3"></audio>
+        <audio id="alarmSound" src="fire-alarm.mp3"></audio>
+    </div>
+
+    <script src="gamejs.js"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>

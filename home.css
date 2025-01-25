@@ -1,0 +1,57 @@
+/* Homepage design */
+body {
+    margin: 0; /* Remove margins */
+    padding: 0; /* Remove padding */
+    font-family: 'Arial', sans-serif; /* Set the font to Arial */
+    background-color: #e8f5e9; /* Light green background */
+    display: flex; /* Use flexbox to arrange the elements */
+    justify-content: center; /* Align elements horizontally in the center */
+    align-items: center; /* Align elements vertically in the center */
+    height: 100vh; /* Set the body's height to fill the entire viewport */
+}
+
+.homepage-container {
+    text-align: center; /* Center the text */
+    background-color: #81c784; /* Light green background */
+    padding: 40px; /* Add padding inside the container */
+    border-radius: 15px; /* Round the corners of the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow to the container */
+    color: #fff; /* Set the text color to white */
+    width: 50%; /* Set the container width to 50% of the screen */
+    height: 50%; /* Set the container height to 50% of the screen */
+    display: flex; /* Use flexbox inside the container */
+    flex-direction: column; /* Arrange the elements vertically */
+    justify-content: center; /* Align elements horizontally in the center */
+    align-items: center; /* Align elements vertically in the center */
+}
+
+.title {
+    font-size: 2.5em; /* Set the font size */
+    margin-bottom: 20px; /* Add margin below the title */
+    color: #ffffff; /* Set the text color to white */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add shadow to the title */
+}
+
+.description {
+    font-size: 1.2em; /* Set the font size */
+    margin-bottom: 30px; /* Add margin below the description */
+    line-height: 1.6; /* Set the line height for better readability */
+}
+
+.play-button {
+    background-color: #388e3c; /* Dark green background */
+    color: #fff; /* Set the text color to white */
+    border: none; /* Remove border */
+    padding: 15px 30px; /* Add padding inside the button */
+    font-size: 1.2em; /* Set the font size inside the button */
+    border-radius: 25px; /* Round the corners of the button */
+    cursor: pointer; /* Change the cursor to a pointer on hover */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow to the button */
+    transition: all 0.3s ease; /* Add transition effect on button */
+}
+
+.play-button:hover {
+    background-color: #2e7d32; /* Darken the button color on hover */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
+    transform: scale(1.1); /* Enlarge the button on hover */
+}

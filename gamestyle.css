@@ -1,0 +1,93 @@
+/* General styles */
+* {
+    margin: 0; /* Remove default margin from all elements */
+    padding: 0; /* Remove default padding from all elements */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Set font to Arial */
+    text-align: center; /* Center align text */
+    padding: 30px; /* Add padding around the body */
+    transition: background-color 0.5s; /* Smooth transition for background color change */
+}
+
+.container {
+    max-width: 600px; /* Set the max width of the container */
+    margin: auto; /* Center the container horizontally */
+    padding: 20px; /* Add padding inside the container */
+    background: white; /* Set background color to white */
+    border-radius: 10px; /* Round the corners of the container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow around the container */
+}
+
+/* Timer and attempts */
+#timer, #attempts {
+    font-size: 18px; /* Set the font size */
+    margin: 10px 0; /* Add margin on top and bottom */
+}
+
+/* Buttons and input styles */
+input[type="number"], input[type="text"] {
+    padding: 10px; /* Add padding inside input fields */
+    font-size: 16px; /* Set font size */
+    width: 200px; /* Set width of input fields */
+    margin-right: 10px; /* Add space on the right side of the input */
+}
+
+button {
+    padding: 10px 20px; /* Add padding inside buttons */
+    font-size: 16px; /* Set font size */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    border: none; /* Remove the border from buttons */
+    border-radius: 5px; /* Round the corners of buttons */
+    background: #4CAF50; /* Set button background to green */
+    color: white; /* Set text color to white */
+    margin: 10px 5px; /* Add margin around buttons */
+    transition: 0.3s; /* Add transition effect for smooth hover */
+}
+
+button:hover {
+    background: #45a049; /* Darker green when button is hovered */
+}
+
+/* Red screen for timeout */
+#redScreen {
+    position: fixed; /* Fix the red screen to cover the entire viewport */
+    top: 0; /* Position it at the top */
+    left: 0; /* Position it at the left */
+    width: 100%; /* Make it cover the full width */
+    height: 100%; /* Make it cover the full height */
+    background: red; /* Set background color to red */
+    display: none; /* Hide it by default */
+    opacity: 0.7; /* Set transparency to make it semi-transparent */
+    z-index: 1000; /* Place it above other content */
+}
+
+/* Spinning dog emoji */
+#dogEmoji {
+    position: fixed; /* Fix it to the viewport */
+    top: 50%; /* Center it vertically */
+    left: 50%; /* Center it horizontally */
+    transform: translate(-50%, -50%) rotate(0deg); /* Align the element to the center */
+    width: 200px; /* Set width of the emoji */
+    animation: spin 2s linear infinite; /* Add spinning animation */
+    z-index: 1001; /* Place it above other content */
+}
+
+/* Thank you message */
+#thankYou {
+    font-size: 24px; /* Set font size */
+    color: green; /* Set text color to green */
+    margin-top: 20px; /* Add margin on top */
+}
+
+/* Animation for spinning */
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg); /* Initial state: no rotation */
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg); /* Final state: one full rotation */
+    }
+}

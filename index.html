@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ar"> <!-- Define the language as Arabic -->
+<head>
+    <meta charset="UTF-8"> <!-- Set the character encoding to UTF-8 to support Arabic characters -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Set the viewport for mobile responsiveness -->
+    <title>الصفحة الرئيسية - أغرب لعبة في التاريخ</title> <!-- Page title displayed in the browser tab -->
+    <link rel="stylesheet" href="home.css"> <!-- Link to the CSS file for styling the page -->
+</head>
+<body dir="rtl"> <!-- Set the text direction to right-to-left for Arabic -->
+    <div class="homepage-container"> <!-- Main container for the homepage -->
+        <h1 class="title">أغرب لعبة في التاريخ</h1> <!-- Main heading for the page -->
+        <p class="description">
+            في اللعبة دي، كل اللي عليك هو تخمين الرقم الصح! 🤔 الموضوع بسيط، صح؟  
+            لكن استنى، ده مش كله! مع مرور الوقت هتبدأ تشوف حاجات غريبة بتحصل،  
+            وتحديات مدهشة هتغير مجرى اللعبة! مستني إيه؟ جرب دلوقتي!
+        </p> <!-- Description of the game with a brief explanation -->
+        <button class="play-button" onclick="startGame()">جرب الآن</button> <!-- Play button that triggers the startGame function when clicked -->
+    </div>
+
+    <script>
+        function startGame() { <!-- Function to redirect the user to the game page -->
+            window.location.href = "game.html"; // Redirect to the game page
+        }
+    </script>
+</body>
+</html>
